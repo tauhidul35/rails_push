@@ -6,23 +6,32 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+We are using ruby version 2.1.5
 
 * System dependencies
 
 * Configuration
+- Copy config/secrets.example.yml file as config/secrets.yml
+- Run in your console:
+```rake secret```
+- Change secret key with new generated secrate key from your console
 
 * Database creation
+- First install mysql database in you computer (if not installed)
+- Copy config/database.example.yml file and save as config/database.yml
+- Change the configuration as your database name, user nnd password
+- Run in your console:
+```
+cd to_project_folder
+rake db:create
+rake db:migrate
+```
 
 * Database initialization
 
 * How to run the test suite
+- There are no test code add yet
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
